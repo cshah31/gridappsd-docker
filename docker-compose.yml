@@ -5,8 +5,8 @@ services:
     image: gridappsd/sample_app${GRIDAPPSD_TAG}
     environment:
       GRIDAPPSD_URI: tcp://gridappsd:61613
-  #    GRIDAPPSD_USER: raftes
-  #    GRIDAPPSD_PASS: uaf_acep
+      GRIDAPPSD_USER: raftes
+      GRIDAPPSD_PASS: uaf_acep
     depends_on:
       - gridappsd 
     #volumes:
