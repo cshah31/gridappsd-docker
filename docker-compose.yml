@@ -1,8 +1,8 @@
 version: '2'
 
 services:
-  sample_app:
-    image: gridappsd/sample_app${GRIDAPPSD_TAG}
+  RAFTES_app:
+    image: gridappsd/RAFTES_app${GRIDAPPSD_TAG}
     environment:
       GRIDAPPSD_URI: tcp://gridappsd:61613
       GRIDAPPSD_USER: raftes
@@ -96,9 +96,9 @@ services:
 # repository.  Once uncommenting the three lines below the sample_app will be available in the
 # container
 #
-    volumes:
-      - ~/git/RAFTES/RAFTES_app:/gridappsd/applications/RAFTES_app
-      - ~/git/RAFTES/RAFTES_app/RAFTES_app.config:/gridappsd/applications/RAFTES_app.config
+#    volumes:
+#      - ~/git/gridappsd-sample-app/sample_app:/gridappsd/applications/sample_app
+#      - ~/git/gridappsd-sample-app/sample_app/sample_app.config:/gridappsd/applications/sample_app.config
 #    volumes:
 #      - ./debug-scripts:/gridappsd/debug-scripts
     depends_on:
