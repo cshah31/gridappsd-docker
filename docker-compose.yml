@@ -2,7 +2,7 @@ version: '2'
 
 services:
   raftes_app:
-    image: gridappsd/raftes_app${GRIDAPPSD_TAG}
+    image: raftes_app${GRIDAPPSD_TAG}
     environment:
       GRIDAPPSD_URI: tcp://gridappsd:61613
       GRIDAPPSD_USER: raftes
